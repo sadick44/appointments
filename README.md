@@ -7,6 +7,7 @@ In order to use this application, you need to respect the following steps
 1. Get to the master Branch and clone the project
 2. Install virtual environment using the following syntax: virtualenv env
 3. Connect to the new created virtual env using: source env/bin/activate
+4. pip install -r requireents.txt
 
 Once all the steps are done successfully, you need the followings
 
