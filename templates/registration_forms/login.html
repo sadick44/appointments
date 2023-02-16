@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 mt-5">
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+            </ul>
+
+            {% endif %}
+
+            <form method="POST">
+                {% csrf_token %}
+                <input type="email" name="email" class="form-control mb-3" placeholder="Entrez votre email" required>
+                <input type="password" name="password" class="form-control mb-3" placeholder="Entrez votre mot de passe"
+                       required>
+
+                <button class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
