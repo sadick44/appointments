@@ -10,8 +10,8 @@ In order to use this application, you need to respect the following steps
 
 Once all the steps are done successfully, you need the followings
 
-a. In the terminal type: python manage.py makemigrations
-b. python manage.py migrate
+1. In the terminal type: python manage.py makemigrations
+2. python manage.py migrate
 
 Then you need to execute the command that adds sellers in the database:
 
